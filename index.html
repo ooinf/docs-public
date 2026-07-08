@@ -7,6 +7,9 @@
       name="description"
       content="Documentacao publica do OOInfo para usuarios comuns."
     />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <title>OOInfo | Documentação</title>
     <link rel="icon" href="data:," />
     <link
@@ -67,9 +70,14 @@
   <body>
     <div id="app">Carregando documentação...</div>
     <script>
+      if (window.location.hash === "" || window.location.hash === "#" || window.location.hash === "#/") {
+        const docsPath = window.location.pathname.replace(/\/index\.html$/, "/");
+        window.location.replace(`${window.location.origin}${docsPath}#/guia-rapido`);
+      }
+    </script>
+    <script>
       window.$docsify = {
         name: "OOInfo",
-        repo: "https://github.com/ooinf/docs-public",
         homepage: "guia-rapido.md",
         loadSidebar: true,
         loadNavbar: true,
