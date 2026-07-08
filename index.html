@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Documentacao publica do OOInfo para usuarios comuns."
+    />
+    <title>OOInfo | Documentação</title>
+    <link rel="icon" href="data:," />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
+    />
+    <style>
+      :root {
+        --theme-color: #2563eb;
+        --docsifytabs-border-color: #dbe3ef;
+        --docsifytabs-tab-highlight-color: #2563eb;
+      }
+
+      body {
+        color: #172033;
+      }
+
+      .app-name-link {
+        color: #111827;
+        font-weight: 800;
+      }
+
+      .sidebar {
+        border-right: 1px solid #e5e7eb;
+      }
+
+      .sidebar-nav a {
+        border-radius: 6px;
+      }
+
+      .markdown-section {
+        max-width: 920px;
+      }
+
+      .markdown-section h1,
+      .markdown-section h2,
+      .markdown-section h3 {
+        color: #111827;
+      }
+
+      .markdown-section blockquote {
+        border-left-color: #14b8a6;
+        background: #f0fdfa;
+        color: #134e4a;
+        padding: 0.75rem 1rem;
+      }
+
+      .markdown-section table {
+        display: table;
+        width: 100%;
+      }
+
+      .markdown-section code {
+        color: #0f766e;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">Carregando documentação...</div>
+    <script>
+      window.$docsify = {
+        name: "OOInfo",
+        repo: "https://github.com/ooinf/docs-public",
+        homepage: "guia-rapido.md",
+        loadSidebar: true,
+        loadNavbar: true,
+        coverpage: true,
+        onlyCover: false,
+        subMaxLevel: 3,
+        auto2top: true,
+        notFoundPage: "404.md",
+        search: {
+          paths: "auto",
+          placeholder: "Buscar na documentação",
+          noData: "Nenhum resultado encontrado",
+          depth: 3,
+        },
+        alias: {
+          "/.*/_sidebar.md": "/_sidebar.md",
+          "/.*/_navbar.md": "/_navbar.md",
+        },
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
+  </body>
+</html>
