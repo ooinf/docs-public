@@ -31,4 +31,4 @@ Uma lista no OOInfo funciona como uma base de conhecimento com estrutura própri
 - Comece pelo [guia rápido](guia-rapido.md).
 - Veja como planejar [listas](listas.md) e [campos](campos.md).
 - Aprenda a trabalhar com [itens](itens.md), [colaboração](colaboracao-revisao.md) e [CSV](csv.md).
-- Consulte [busca e permissões](busca-permissoes.md) antes de publicar dados sensíveis.
+- Consulte [busca e permissões](busca-permissoes.md) antes de publicar dados sensíveis
